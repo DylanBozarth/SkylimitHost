@@ -1,0 +1,92 @@
+{
+  "main":{
+    "serviceitems": [
+      {
+        "title":"Service 1",
+        "description":"This is wear you would describe what this item is.",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 10,
+        "image": "./serviceimages/bikeblackNwhite.jpg",
+        "amount": 1
+      },
+      {
+        "title":"Service 2",
+        "description":"yeah",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 35,
+        "image": "./serviceimages/headerimg.png",
+        "amount": 1
+      },
+      {
+        "title":"Service 3",
+        "description":"yeeeeah",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 5,
+        "image": "./serviceimages/coachskybio.png",
+        "amount": 1
+      },
+      {
+        "title":"Service 4",
+        "description":"wew",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 120,
+        "image": "./serviceimages/IMG_4709.JPG",
+        "amount": 1
+      },
+      {
+        "title":"Service 5",
+        "description":"aaaaa",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 100,
+        "image": "./serviceimages/cat.jpg",
+        "amount": 1
+      },
+      {
+        "title":"Service 6",
+        "description":"asadasda",
+        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "price": 60,
+        "image": "./serviceimages/bikeonroad.JPG",
+        "amount": 1
+
+      }
+    ]
+  },
+  "blog":{
+    "blogitems": [
+      {
+        "title":"Blog item 1",
+        "date": "may 5th 2020",
+        "tagline":"Keep this short",
+        "firstparagraph": "  Lorem ipsum,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere   dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,   dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem",
+        "previewimage":"./serviceimages/cat.jpg"
+      },
+      {
+        "title":"Blog item 2",
+        "tagline":"Keep this short",
+        "firstparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "previewimage":"./serviceimages/cat.jpg",
+        "subheading1": "Subheading one",
+        "image2": "./serviceimages/cat.jpg",
+        "secondparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "subheading2": "Subheading two",
+        "thirdparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "subheading3": "Subheading two",
+        "forthparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo."
+      },
+      {
+        "title":"Blog item 3",
+        "tagline":"Keep this short",
+        "firstparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "previewimage":"./serviceimages/cat.jpg",
+        "subheading1": "Subheading one",
+        "secondparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "subheading2": "Subheading two",
+        "thirdparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "subheading3": "Subheading two",
+        "forthparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo."
+      }
+
+    ]
+  }
+}
