@@ -361,6 +361,7 @@ margin-top: -8%;
   bottom: 0;
   background-color: skyblue;
   width: 100%;
+ margin-left: -5%;
  
 }
 .nocart {
@@ -370,9 +371,11 @@ margin-top: -8%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .yourtotal {
-
+top: -25%;
   left: 50%;
   position: absolute;
 }

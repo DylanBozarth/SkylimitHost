@@ -1,52 +1,64 @@
+// Customize this 'myform.js' script and add it to your JS bundle.
+// Then import it with 'import MyForm from "./myform.js"'.
+// Finally, add a <MyForm/> element whereever you wish to display the form.
+
 import React from "react";
 
-import {useForm}  from "react-hook-form";
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
+    };
+  }
 
-export default function Contact() {
-  
-    const { handleSubmit, register, errors } = useForm();
-    
-  
-  const onSubmit = (data) => {
-    console.log(data);
-  };
-  return (
-    <div className="contactmain">
-      <h1 className="contactme">Contact Me</h1>
-      <form id="contact-form" method="POST" onSubmit={this.handleSubmit(onSubmit)}>
-        <div className="form-group">
-          <label htmlFor="name">
-            <h3>Name</h3>
-          </label>
-          <input type="text" className="form-control" />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputPhone">
-            <h3>Phone number</h3>
-          </label>
-          <input
-            type="phone"
-            className="form-control"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">
-            <h3>Email address</h3>
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            <h3> What are your health and fitness goals?</h3>
-          </label>
-          <textarea className="form-control" rows="5" />
-        </div>
-        <div className="col-sm-12">
+  render() {
+    const { status } = this.state;
+    return (
+      <form
+        onSubmit={this.submitForm}
+        action="https://formspree.io/maypqndd"
+        method="POST"
+      >
+      <label>Your name</label>
+        <input type="text" name="My name:" />
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <label>Phone number</label>
+        <input type="text" name="Phone number" />
+        <label>What are you fitness goals?</label>
+        <input type="text" name="My fitness goals" />
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button onSubmit={this.submitForm}>Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </form>
+    );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+}
+
+
+
+
+/*<div className="col-sm-12">
           <h3>What are you interested in? Select all that apply.</h3>
           <div className="radio ">
             <label>
@@ -93,7 +105,4 @@ export default function Contact() {
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-      </form>
-    </div>
-  );
-}
+        */

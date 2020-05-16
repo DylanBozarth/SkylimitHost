@@ -27,21 +27,21 @@ class Navbar extends Component {
           <NavLink to="/" className="menu-item">
             {" "}
             <i className="fa fa-home">
-              <br />
+              
               Home
             </i>
           </NavLink>
           <NavLink to="/Services" className="menu-item">
             {" "}
             <i className="fa fa-address-card ">
-              <br />
+              
               Services
             </i>{" "}
           </NavLink>
           <NavLink to="/Blog" className="menu-item">
             {" "}
             <i className=" fa fa-newspaper-o ">
-              <br /> Blog
+              Blog
             </i>
           </NavLink>
           <NavLink to="/Cart" className="menu-item">
