@@ -10,11 +10,28 @@ export default class Contact extends React.Component {
     this.submitForm = this.submitForm.bind(this);
     this.state = {
       status: ""
+      
     };
+    
+
   }
 
+
+  
   render() {
     const { status } = this.state;
+    function itworked() {
+  alert("Sky will contact you shortly!")
+  var checkedValue = document.getElementsByClassName('checkbox').value
+  console.log(checkedValue)
+
+}
+function didntwork() {
+  alert("Error, sorry.")
+}
+
+
+
     return (
       <form
         onSubmit={this.submitForm}
@@ -29,8 +46,53 @@ export default class Contact extends React.Component {
         <input type="text" name="Phone number" />
         <label>What are you fitness goals?</label>
         <input type="text" name="My fitness goals" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button onSubmit={this.submitForm}>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        <div className="col-sm-12">
+          <h3>What are you interested in? Select all that apply.</h3>
+          <div className="radio ">
+            <label>
+              <input type="checkbox" className="checkbox" value="Coaching" />1 : 1 Coaching
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox" className="checkbox" value="Triatholons" />
+              Triathlon Training Plans
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox" className="checkbox" value="running/trainingplans" />
+              Running/Ultrarunning Training Plans
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox"  className="checkbox" value="Personaltraining" />
+              Personal Training plans
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox" className="checkbox" value="Nutrition" />
+              Nutrition Coaching
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox" className="checkbox" value="Swimming" />
+              Swimming Analysis
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="checkbox" className="checkbox" value="runningAnalysis" />
+              Running Analysis
+            </label>
+          </div>
+        </div>
+        
+        {status === "SUCCESS" ? <p>{itworked()}</p> : <button onSubmit={this.submitForm}>Submit</button>}
+        {status === "ERROR" && <p>{didntwork()}</p>}
       </form>
     );
   }
