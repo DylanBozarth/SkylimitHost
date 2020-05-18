@@ -9,8 +9,8 @@ export default class Contact extends React.Component {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: ""
-      
+      status: "",
+      invisibletext: ""
     };
     
 
@@ -22,12 +22,19 @@ export default class Contact extends React.Component {
     const { status } = this.state;
     function itworked() {
   alert("Sky will contact you shortly!")
-  var checkedValue = document.getElementsByClassName('checkbox').value
-  console.log(checkedValue)
-
-}
+  var checkedboxes = document.querySelectorAll('[type="checkbox"]:checked')
+  
+  const values = [
+    ...document.querySelectorAll('[type="checkbox"]:checked')
+  ].map(el => el.value) ;
+  this.setState({
+    invisibletext: values
+  })
+  }
+  
+  
 function didntwork() {
-  alert("Error, sorry.")
+  alert("Error, something's not right. ")
 }
 
 
@@ -89,9 +96,10 @@ function didntwork() {
               Running Analysis
             </label>
           </div>
+          <input className="invisible" type="text" name="I am interested in:"></input>
         </div>
         
-        {status === "SUCCESS" ? <p>{itworked()}</p> : <button onSubmit={this.submitForm}>Submit</button>}
+        {status === "SUCCESS" ? <p>{itworked()}</p> : <button>Submit</button>}
         {status === "ERROR" && <p>{didntwork()}</p>}
       </form>
     );
