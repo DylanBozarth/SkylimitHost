@@ -68,11 +68,10 @@ class Cart extends Component {
               alt={cartitems.name}
               className="cart-image"
             />
-
             <h5 className="">{cartitems.description}</h5>
             <p className="">{cartitems.fulldescription}</p>
             <div className="pricebox">
-              <p className="cartprice">{cartitems.price}</p>
+              <p className="cartprice">${cartitems.price}</p>
             </div>
             <button
               // pass the id and price

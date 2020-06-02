@@ -1,8 +1,9 @@
 // Customize this 'myform.js' script and add it to your JS bundle.
 // Then import it with 'import MyForm from "./myform.js"'.
 // Finally, add a <MyForm/> element whereever you wish to display the form.
-
+import cogoToast from 'cogo-toast';
 import React from "react";
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -21,85 +22,93 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     function itworked() {
-  alert("Sky will contact you shortly!")
-  var checkedboxes = document.querySelectorAll('[type="checkbox"]:checked')
+      cogoToast.success("Thank you for reaching out! Coach Sky will be in contact with you shortly via email. Happy Training!");
+    }
   
-  const values = [
-    ...document.querySelectorAll('[type="checkbox"]:checked')
-  ].map(el => el.value) ;
-  this.setState({
-    invisibletext: values
-  })
-  }
+
   
   
 function didntwork() {
-  alert("Error, something's not right. ")
+  cogoToast.error("Error, please try again. ");
 }
 
 
 
     return (
+      
       <form
         onSubmit={this.submitForm}
         action="https://formspree.io/maypqndd"
-        method="POST"
+        method="POST" className="contactform"
       >
+        <h1 className="contactsky">Contact sky</h1>
+        
+        <div className="SMlinks">Social media links <br />
+         <a href="https://www.facebook.com/skylimfitness/" target="_blank " rel="noopener noreferrer"><FaFacebookSquare /></a> 
+         <a href="https://www.instagram.com/sky_limit_fitness/
+" target="_blank" rel="noopener noreferrer"><FaInstagram /></a> 
+        </div>
       <label>Your name</label>
         <input type="text" name="My name:" />
+        <br />
         <label>Email:</label>
         <input type="email" name="email" />
+        <br />
         <label>Phone number</label>
         <input type="text" name="Phone number" />
+        <br />
         <label>What are you fitness goals?</label>
-        <input type="text" name="My fitness goals" />
-        <div className="col-sm-12">
+        <textarea type="text" name="My fitness goals" />
+      
+        <div className="col-sm-12 checkboxes">
           <h3>What are you interested in? Select all that apply.</h3>
           <div className="radio ">
             <label>
-              <input type="checkbox" className="checkbox" value="Coaching" />1 : 1 Coaching
+              <input type="checkbox" className="checkbox" name="Coaching" />1 : 1 Coaching
             </label>
           </div>
           <div className="radio">
+            
             <label>
-              <input type="checkbox" className="checkbox" value="Triatholons" />
+              <input type="checkbox" className="checkbox" name="Triatholons" />
               Triathlon Training Plans
             </label>
           </div>
           <div className="radio">
             <label>
-              <input type="checkbox" className="checkbox" value="running/trainingplans" />
+              <input type="checkbox" className="checkbox" name="running/trainingplans" />
               Running/Ultrarunning Training Plans
             </label>
           </div>
           <div className="radio">
             <label>
-              <input type="checkbox"  className="checkbox" value="Personaltraining" />
+              <input type="checkbox"  className="checkbox" name="Personal Training plans" />
               Personal Training plans
             </label>
           </div>
           <div className="radio">
             <label>
-              <input type="checkbox" className="checkbox" value="Nutrition" />
+              <input type="checkbox" className="checkbox" name="Nutrition" />
               Nutrition Coaching
             </label>
           </div>
           <div className="radio">
             <label>
-              <input type="checkbox" className="checkbox" value="Swimming" />
+              <input type="checkbox" className="checkbox" name="Swimming" />
               Swimming Analysis
             </label>
           </div>
           <div className="radio">
             <label>
-              <input type="checkbox" className="checkbox" value="runningAnalysis" />
+              <input type="checkbox" className="checkbox" name="runningAnalysis" />
               Running Analysis
             </label>
+            
           </div>
-          <input className="invisible" type="text" name="I am interested in:"></input>
+         
         </div>
         
-        {status === "SUCCESS" ? <p>{itworked()}</p> : <button>Submit</button>}
+        {status === "SUCCESS" ? <p>{itworked()}</p> : <button className="submitbutton">Submit</button>}
         {status === "ERROR" && <p>{didntwork()}</p>}
       </form>
     );

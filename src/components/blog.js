@@ -23,14 +23,26 @@ class Blog extends Component {
                 <img
                   src={blogitems.previewimage}
                   className="fakeimg"
-                  height="300px"
+                  height="312px"
+                  width="820px"
                   alt={blogitems.title}
                 ></img>
                 <h1>{blogitems.title}</h1>
                 <p>{blogitems.date}</p>
-                <Collapsible className="blog-item-trigger" trigger='Read more ' transitionTime='200' triggerWhenOpen="Collapse">
+                <Collapsible
+                  className="blog-item-trigger btn-2"
+                  trigger="Read more "
+                  transitionTime="300"
+                   triggerWhenOpen="Collapse"
+                >
                   <p className="blog-item-text">{blogitems.firstparagraph}</p>
+                  <h4>{blogitems.subheading1}</h4>
+                  <p className="blog-item-text">{blogitems.secondparagraph}</p>
                   
+                  <h4>{blogitems.subheading2}</h4>
+                  <p className="blog-item-text">{blogitems.thirdparagraph}</p>
+                  <h4>{blogitems.subheading3}</h4>
+                  <p className="blog-item-text">{blogitems.forthparagraph}</p>
                 </Collapsible>
               </div>
             </div>
@@ -42,12 +54,7 @@ class Blog extends Component {
     return (
       <div>
         <div className="blogtitle">My blog</div>
-        <div className="sidebar">
-          Social media links <br />
-         <a href="www.google.com"><i className="fa fa-twitter socialmedialink" ></i></a> 
-         <a href="www.google.com"><i className="fa fa-facebook socialmedialink" ></i></a> 
-         <a href="www.google.com"><i className="fa fa-instagram socialmedialink" ></i></a> 
-        </div>
+
         <div className="blogpage">{blogitems}</div>
       </div>
     );

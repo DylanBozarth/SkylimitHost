@@ -248,12 +248,14 @@ max-width: 100%;
 }
 /* Services page */ 
 .container {
-  background-image: url(./components/images/runner.jpeg);
-  background-size: 130%;
-  background-repeat: none;
-color: white;
+ 
+  
+color: black;
   display: flex;
   flex-wrap: wrap;
+  font-size: 24px;
+  text-align: center;
+  
   
 }
 .serviceitem {
@@ -264,14 +266,23 @@ color: white;
  position: relative;
 }
 .serviceitemimg {
-  max-width: 300px !important;
- max-height: 250px !important;
+  max-width: 550px !important;
+ max-height: 400px !important;
 }
 .servicetext {
   text-align: center;
 }
 .servicestitle {
 text-align: center;
+}
+.addtocart {
+  background-color: #29b6f6;
+  border: none;
+  border-radius: .15em;
+  color: #fff;
+  cursor: pointer;
+  padding: .75em 1.5em;
+  font-size: 1em;
 }
 
 
@@ -287,22 +298,57 @@ background-color: blue;
 
 
 /* blog page */ 
-.sidebar {
+.SMlinks {
   
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+ 
+ 
+  width: 33%;
   background-color: skyblue;
   color: white;
-  text-align: center;
 }
 .blog-item-trigger {
   cursor: pointer;
-  margin: 5px;
-  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+background-color: green;
 }
+.btn-2 {
+  letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+backface-visibility: hidden;
+border: 1px solid rgba(black, 0);
+bottom: 0px;
+content: " ";
+display: block;
+margin: 0 auto;
+position: relative;
+transition: all 280ms ease-in-out;
+width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+backface-visibility: hidden;
+border-color: #fff;
+transition: width 350ms ease-in-out;
+width: 30%;
+}
+
+.btn-2:hover:before {
+bottom: auto;
+top: 0;
+width: 30%;
+}
+
 .socialmedialink{
   width: 50px;
   height: 25px;
@@ -388,6 +434,10 @@ top: -25%;
 .addbutton {
   margin: 10px;
 }
+.contactsky {
+  color: skyblue;
+  text-align: center;
+}
 .cartitem {
   max-width: 350px !important;
   max-height: 40% !important;
@@ -399,12 +449,75 @@ top: -25%;
   max-height: 25% !important;
 }
 /* contact page */
-.contactmain {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 16px;
+.contactform {
+  margin-top: -10%;
 }
 .contactme {
   text-align: center;
   
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text]:focus {
+  background-color: skyblue;
+}
+input[type=email]:focus {
+  background-color: skyblue;
+}
+textarea:focus {
+  background-color: skyblue;
+}
+textarea {
+  width: 95%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.checkboxes {
+  text-align: center;
+}
+.submitbutton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+ font-size: 24px;
+  cursor: pointer;
+  width: 100%;
+}
+.submitbutton:hover {
+text-decoration: underline;
 }

@@ -26,15 +26,13 @@ class Services extends React.Component {
               <p id={serviceitems.description} className=" ">
                 {serviceitems.description}
               </p>
-              <p className="">{serviceitems.price}</p>
-              <p id={serviceitems.amount} className=" ">
-                Duration:{serviceitems.amount} week(s)
-              </p>
+              <p className="">${serviceitems.price}</p>
+              <p>{serviceitems.onotherwebsite}</p>
               <button
                 name={serviceitems.title}
                 id={serviceitems.image}
                 value={serviceitems.price}
-                className=""
+                className="addtocart"
                 // pass the event and serviceitems object
                 onClick={e => this.handleAddToCart(e, serviceitems)}
               >
