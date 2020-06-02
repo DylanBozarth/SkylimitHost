@@ -133,10 +133,17 @@ $opening-angle:$pi*0.5;
 
 /* nav bar end */ 
 /* Home page styling */ 
-
+.homepagemaster {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hometitle {
+  margin-top: 6%;
   color: skyblue;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ 
   font-weight: bolder;
   font-size: 45px;
 }
@@ -144,6 +151,7 @@ $opening-angle:$pi*0.5;
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  
 }
 .homebio {
   text-align: center;
@@ -156,6 +164,7 @@ $opening-angle:$pi*0.5;
 }
 .homesubtitle {
   margin: 10px;
+  
   text-align: left;
   color: skyblue;
   font-weight: bolder;
@@ -172,10 +181,17 @@ $opening-angle:$pi*0.5;
   float: center;
   font-size: 16px;
 }
+.coachsky {
+  font-size: 23px;
+  margin-bottom: -1%;
+  margin-top: -0.5%;
+  font-style: italic;
+}
 .coachskywill {
   color: skyblue; 
   font-weight: bolder;
-  margin: 15px;
+  margin-bottom: 15px;
+  margin-top: -10%;
   text-align: center;
   font-size: 50px;
 }
@@ -190,11 +206,14 @@ $opening-angle:$pi*0.5;
   font-weight: bolder;
   font-size: 36px;
   color: skyblue;
-  margin-top: -5%;
+  margin-top: -10%;
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .homeslider {
   text-align: center;
+  
 }
 .linktoservices {
   color: black;
@@ -225,6 +244,15 @@ max-width: 100%;
   margin-left: 4%;
   margin-right: 4%;
 }
+.testimonialtext{
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+.testimonialauthor {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
 
 
 .meettitle {
@@ -235,6 +263,7 @@ max-width: 100%;
 }
 .skybiophoto {
   float: left;
+  margin-right: 5%;
 }
 .skybio {
   font-size: 20px;
@@ -245,6 +274,14 @@ max-width: 100%;
 }
 .meet {
   margin: 50px;
+}
+.readytogetstarted {
+  color: skyblue;
+  font-weight: bold;
+  text-decoration: wavy;
+}
+.readytogetstarted:hover {
+  text-decoration: underline;
 }
 /* Services page */ 
 .container {
@@ -274,6 +311,9 @@ color: black;
 }
 .servicestitle {
 text-align: center;
+margin-top: -7%;
+font-size: 36px;
+color: skyblue;
 }
 .addtocart {
   background-color: #29b6f6;
@@ -300,18 +340,24 @@ background-color: blue;
 /* blog page */ 
 .SMlinks {
   
- 
- 
-  width: 33%;
-  background-color: skyblue;
-  color: white;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+  margin: 3%;
+  
+  font-weight:bolder;
+  color: black;
 }
+
 .blog-item-trigger {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-background-color: green;
+background-color: skyblue;
+width: 30%;
+color: white;
+font-size: 2vh;
 }
 .btn-2 {
   letter-spacing: 0;
@@ -331,7 +377,7 @@ content: " ";
 display: block;
 margin: 0 auto;
 position: relative;
-transition: all 280ms ease-in-out;
+transition: all 1s ease-in-out;
 width: 0;
 }
 
@@ -339,7 +385,7 @@ width: 0;
 .btn-2:hover:before {
 backface-visibility: hidden;
 border-color: #fff;
-transition: width 350ms ease-in-out;
+transition: width 1s ease-in-out;
 width: 30%;
 }
 
@@ -349,11 +395,7 @@ top: 0;
 width: 30%;
 }
 
-.socialmedialink{
-  width: 50px;
-  height: 25px;
-  
-}
+
 .blog-item-text {
   text-align: center;
 }
@@ -437,6 +479,10 @@ top: -25%;
 .contactsky {
   color: skyblue;
   text-align: center;
+  font-style: bold;
+  font-size: 48px;
+  margin-bottom: 3%;
+  margin-top: -2%;
 }
 .cartitem {
   max-width: 350px !important;
@@ -451,6 +497,9 @@ top: -25%;
 /* contact page */
 .contactform {
   margin-top: -10%;
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contactme {
   text-align: center;
@@ -505,8 +554,15 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
-.checkboxes {
-  text-align: center;
+
+.leftboxes {
+  float: left;
+  margin-right: 5%;
+  
+}
+.rightboxes {
+  float: center;
+  
 }
 .submitbutton {
   background-color: #4CAF50;
@@ -517,6 +573,8 @@ textarea {
  font-size: 24px;
   cursor: pointer;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .submitbutton:hover {
 text-decoration: underline;

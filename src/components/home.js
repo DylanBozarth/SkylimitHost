@@ -7,7 +7,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="homepagemaster">
         <h3 className="hometagline">
           {" "}
           SkyLimit Fitness will keep you accountable for your goals and help you
@@ -23,7 +23,7 @@ class Home extends Component {
             of your wellness:
             <ul>
               {" "}
-              <li>fitness</li> <li>nutrition</li> <li>mental health.</li>{" "}
+              <li>fitness</li> <li>nutrition</li> <li>mental health</li>{" "}
             </ul>{" "}
             With training plans and nutrition coaching all in one place, we help
             you forge a lifestyle geared toward a healthy balance between your
@@ -71,7 +71,7 @@ class Home extends Component {
             alt="sky"
             src={require("./images/Sky.jpg")}
           ></img>
-          <h4>Coach Sky</h4>
+          <h4 className="coachsky">Coach Sky</h4>
           <br />
         </div>
 
@@ -107,7 +107,7 @@ class Home extends Component {
               className="fitnessguy"
               src={require("./images/fitnessguy.gif")}
             ></img>{" "}
-            <br /> <NavLink to="/Services"> Ready to get started? </NavLink>{" "}
+            <br /> <NavLink to="/Services" className="readytogetstarted"> Ready to get started? </NavLink>{" "}
             <br />
             <img
               alt="fitnessguy"
