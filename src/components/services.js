@@ -27,7 +27,7 @@ class Services extends React.Component {
                 {serviceitems.description}
               </p>
               <p className="">${serviceitems.price}</p>
-              <p>{serviceitems.onotherwebsite}</p>
+              <a href={serviceitems.onotherwebsite} target="_blank">Can be purchased here</a>
               <button
                 name={serviceitems.title}
                 id={serviceitems.image}

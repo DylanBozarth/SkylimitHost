@@ -47,7 +47,8 @@
         "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "price": 19,
         "image": "./serviceimages/nutrition.png",
-        "onotherwebsite": "This item will be bought here www.google.com"
+        "onotherwebsite": "https://www.google.com"
+
 
       }
     ]
