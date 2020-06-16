@@ -1,6 +1,5 @@
 import React from "react";
 
-import Collapsible from "react-collapsible";
 
 
 class Services extends React.Component {
@@ -27,7 +26,7 @@ class Services extends React.Component {
                 {serviceitems.description}
               </p>
               <p className="">${serviceitems.price}</p>
-              <a href={serviceitems.onotherwebsite} target="_blank">Can be purchased here</a>
+              <a href={serviceitems.onotherwebsite} target="_blank">{serviceitems.onotherwebsite}</a>
               <button
                 name={serviceitems.title}
                 id={serviceitems.image}
@@ -38,9 +37,7 @@ class Services extends React.Component {
               >
                 Add to cart
               </button>
-              <Collapsible trigger={<p className="">Read more</p>}>
-                {serviceitems.fulldescription}{" "}
-              </Collapsible>
+              
             </div>
           );
         }
@@ -49,7 +46,7 @@ class Services extends React.Component {
 
     return (
       <div>
-        <h1 className="servicestitle">Some services I offer</h1>
+        <h1 className="servicestitle">Some services I offer <br /> Hover or tap to expand</h1>
         <div className="container">{serviceitems}</div>
       </div>
     );

@@ -2,52 +2,49 @@
   "main":{
     "serviceitems": [
       {
-        "title":"Service 1",
-        "description":"This is wear you would describe what this item is.",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "title":"",
+        "description":"",
+        "fulldescription": "",
         "price": 10,
-        "image": "./serviceimages/nutrition.png",
-        "amount": 1
+        "image": "./serviceimages/nutrition.png"
       },
       {
-        "title":"Service 2",
-        "description":"yeah",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "title":"",
+        "description":"",
+        "fulldescription": "",
         "price": 35,
-        "image": "./serviceimages/personaltraining.png",
-        "amount": 1
+        "image": "./serviceimages/personaltraining.png"
+        
       },
       {
-        "title":"Service 3",
-        "description":"yeeeeah",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "title":"",
+        "description":"",
+        "fulldescription": "",
         "price": 5,
-        "image": "./serviceimages/nutrition.png",
+        "image": "./serviceimages/swimanalysis.png"
+      },
+      {
+        "title":"",
+        "description":"",
+        "fulldescription": "",
+        "price": 175,
+        "image": "./serviceimages/coachingbronze.png",
         "amount": 1
       },
       {
-        "title":"Service 4",
-        "description":"wew",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
-        "price": 120,
-        "image": "./serviceimages/nutrition.png",
-        "amount": 1
-      },
-      {
-        "title":"Service 5",
-        "description":"aaaaa",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
+        "title":"",
+        "description":"",
+        "fulldescription": "",
         "price": 100,
-        "image": "./serviceimages/nutrition.png",
-        "amount": 1
+        "image": "./serviceimages/coachingsilver.png"
       },
       {
-        "title":"external service",
-        "description":"asadasda",
-        "fulldescription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
-        "price": 19,
-        "image": "./serviceimages/nutrition.png",
-        "onotherwebsite": "https://www.google.com"
+        "title":"",
+        "description":"",
+        "fulldescription": "",
+        "price": 195,
+        "image": "./serviceimages/coachinggold.png",
+        "onotherwebsite": ""
 
 
       }

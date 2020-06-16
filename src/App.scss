@@ -301,11 +301,26 @@ color: black;
   margin-left: 4%;
   margin-right: 4%;
  position: relative;
-}
+}@mixin expand{
+  transform: scale(1.4, 1.4);
+  -ms-transform: scale(1.4, 1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4, 1.4);
+  /* Safari and Chrome */
+  transition: width 0.1s, height 0.1s, transform 0.1s;
+  -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s;
+   opacity:1;
+  z-index: 999;
+  }
 .serviceitemimg {
   max-width: 550px !important;
  max-height: 400px !important;
+ &:hover{
+  @include expand;
 }
+}
+
+
 .servicetext {
   text-align: center;
 }

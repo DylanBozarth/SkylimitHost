@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Imageshowoff from "./subcomponents/imageshowoff";
+import Imageshowoff from "./imageshowoff";
 import Testimonials from "./subcomponents/testimonials";
 import { NavLink } from "react-router-dom";
 

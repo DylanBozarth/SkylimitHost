@@ -34,7 +34,7 @@ export default class PaypalButton extends React.Component {
       // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
     };
 
-    let env = "sandbox"; // you can set this string to 'production'
+    let env = "production"; // you can set this string to 'production'
     let currency = "USD"; // you can set this string from your props or state
     let total = this.props.total; // this is the total amount (based on currency) to charge
     // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
@@ -42,7 +42,7 @@ export default class PaypalButton extends React.Component {
     const client = {
       sandbox:
         "AbJPYWNcC0x0hE4sU1BvgdLb0fJPc9Ybe4kPsIzA5sfVxZNa_Weqoi3Nho0YHxAVmtQBfATIxjii0kUa",
-      production: "YOUR-PRODUCTION-APP-ID",
+      production: "AVPPC7DcgjOXOlE8tA5qQaH6kkQtjJ15JwPbT9hCzmQ5SsOR4pGNnzJHFDNJwBIQb8EEENoinr_kFztd",
     };
     // In order to get production's app-ID, you will have to send your app to Paypal for approval first
     // For your sandbox Client-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App" unless you have already done so):
