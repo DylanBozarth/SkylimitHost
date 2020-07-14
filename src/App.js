@@ -70,15 +70,14 @@ class App extends Component {
   }
   
   render() {
-    console.log("Total", this.state.total);
     return (
       <BrowserRouter>
         <div className="App">
-          <div className="fixedview">
+          
             <Header />
             <Navbar cart={this.state.cart} />
-          </div>
-          <div className="viewthatchanges">
+          
+          <div>
             <Route
               exact
               path="/"

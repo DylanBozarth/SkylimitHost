@@ -6,7 +6,7 @@ class Blog extends Component {
     super();
 
     this.state = {
-      loading: true,
+     
       blogitems: null,
     };
   }
@@ -22,9 +22,8 @@ class Blog extends Component {
               <div className="leftcolumn">
                 <img
                   src={blogitems.previewimage}
-                  className="fakeimg"
-                  height="312px"
-                  width="820px"
+                  className="img-fluid"
+                  width= '100%'
                   alt={blogitems.title}
                 ></img>
                 <h1>{blogitems.title}</h1>
@@ -49,11 +48,11 @@ class Blog extends Component {
           </div>
         );
       });
-    } else return <h1>Loading...</h1>;
+    } else return <h1>Blog posts are coming soon! </h1>;
 
     return (
       <div>
-        <div className="blogtitle">My blog</div>
+        <h1 className="blogtitle lead">My blog</h1>
 
         <div className="blogpage">{blogitems}</div>
       </div>

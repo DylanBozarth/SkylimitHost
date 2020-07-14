@@ -1,16 +1,18 @@
+
 .App {
   
-  width: 100%;
+  
   margin: 0 auto;
 
   
 }
 .App {
-  width: 100%;
+  max-width: 100% !important;
+  overflow: hidden;
 }
 .headerimg {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 45vh;
   
 } 
 
@@ -23,13 +25,15 @@
   
 }
 @media only screen and (max-width: 600px) {
+  
   .menu {
     left: -80px !important;
     top: -20px !important;
     font-size: 16px !important;
-
-
+z-index: 90;
+padding: -3% !important;
   }
+  
 }
 
 //vars
@@ -137,6 +141,13 @@ $opening-angle:$pi*0.5;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -5%;
+}
+@media only screen and (max-width: 600px) {
+  
+.homepagemaster {
+  margin-top: -25%;
+}
 }
 .hometitle {
   margin-top: 6%;
@@ -284,6 +295,7 @@ max-width: 100%;
   text-decoration: underline;
 }
 /* Services page */ 
+
 .container {
  
   
@@ -302,10 +314,10 @@ color: black;
   margin-right: 4%;
  position: relative;
 }@mixin expand{
-  transform: scale(1.4, 1.4);
-  -ms-transform: scale(1.4, 1.4);
+  transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
   /* IE 9 */
-  -webkit-transform: scale(1.4, 1.4);
+  -webkit-transform: scale(1.3, 1.3);
   /* Safari and Chrome */
   transition: width 0.1s, height 0.1s, transform 0.1s;
   -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s;
@@ -313,11 +325,20 @@ color: black;
   z-index: 999;
   }
 .serviceitemimg {
-  max-width: 550px !important;
+  max-width: 450px !important;
  max-height: 400px !important;
  &:hover{
   @include expand;
 }
+}
+.carttitle {
+  text-align: center;
+ color: skyblue;
+ margin-bottom: 10px;
+}
+.cartitems {
+  margin-top: 50px;
+  
 }
 
 
@@ -329,6 +350,39 @@ text-align: center;
 margin-top: -7%;
 font-size: 36px;
 color: skyblue;
+}
+@media only screen and (max-width: 600px) {
+  .serviceitem {
+    max-width: 350px !important;
+    max-height: 40% !important;
+    margin-left: -5%;
+   position: relative;
+  }
+  @mixin expand2{
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Safari and Chrome */
+    transition: width 0.1s, height 0.1s, transform 0.1s;
+    -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s;
+     opacity:1;
+    z-index: 999;
+    }
+  .serviceitemimg {
+    max-width: 450px !important;
+   max-height: 400px !important;
+   &:hover{
+    @include expand2;
+  }
+  }
+.servicestitle{
+  margin-top: -25%;
+}
+.servicepage {
+  margin-bottom: 10%;
+}
+
 }
 .addtocart {
   background-color: #29b6f6;
@@ -428,18 +482,11 @@ width: 30%;
   font-size: 48px;
   color: skyblue;
 text-align: center;
-float: center;
-margin: 5%;
-margin-top: -8%;
+margin-top: -100px;
 }
 
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+
 
 /* Add a card effect for articles */
 .card {
@@ -464,7 +511,6 @@ margin-top: -8%;
   bottom: 0;
   background-color: skyblue;
   width: 100%;
- margin-left: -5%;
  
 }
 .nocart {
@@ -492,6 +538,9 @@ top: -25%;
 .addbutton {
   margin: 10px;
 }
+.cartitem {
+  margin: 5%;
+}
 .contactsky {
   color: skyblue;
   text-align: center;
@@ -516,6 +565,11 @@ top: -25%;
   width: 68%;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 600px) {
+  .contactform{
+margin-top: -25%;
+  }
 }
 .contactme {
   text-align: center;

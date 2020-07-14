@@ -52,28 +52,9 @@
   },
   "blog":{
     "blogitems": [
+      
       {
-        "title":"Blog item 1",
-        "date": "may 5th 2020",
-        "tagline":"Keep this short",
-        "firstparagraph": "  Lorem ipsum,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere   dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,   dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta,  dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo. lorem",
-        "previewimage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.planetwildlife.com%2Fsites%2Fdefault%2Ffiles%2Ffield%2Fimage%2Fnature-banner.jpg&f=1&nofb=1"
-      },
-      {
-        "title":"Blog item 2",
-        "tagline":"Keep this short",
-        "firstparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
-        "previewimage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.planetwildlife.com%2Fsites%2Fdefault%2Ffiles%2Ffield%2Fimage%2Fnature-banner.jpg&f=1&nofb=1",
-        "subheading1": "Subheading one",
-       
-        "secondparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
-        "subheading2": "Subheading two",
-        "thirdparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
-        "subheading3": "Subheading three",
-        "forthparagraph": " Third paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo."
-      },
-      {
-        "title":"Blog item 3",
+        "title":"My blog is coming soon! ",
         "tagline":"Keep this short",
         "firstparagraph": "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quis doloribus! Quod, commodi nobis, dignissimos tenetur facere expedita ullam ut nam dicta, tempora temporibus voluptas aliquid enim autem. Quam, explicabo.",
         "previewimage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.planetwildlife.com%2Fsites%2Fdefault%2Ffiles%2Ffield%2Fimage%2Fnature-banner.jpg&f=1&nofb=1",

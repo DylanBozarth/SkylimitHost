@@ -14,7 +14,7 @@ class Services extends React.Component {
       var serviceitems = this.props.propdata.main.serviceitems.map(
         serviceitems => {
           return (
-            <div className="col-sm-12  serviceitem" key={serviceitems.title}>
+            <div className="col-sm-12  serviceitem" key={serviceitems.price}>
               <h5 className="">{serviceitems.title}</h5>
               <img
                 src={serviceitems.image}
@@ -26,7 +26,7 @@ class Services extends React.Component {
                 {serviceitems.description}
               </p>
               <p className="">${serviceitems.price}</p>
-              <a href={serviceitems.onotherwebsite} target="_blank">{serviceitems.onotherwebsite}</a>
+              <a href={serviceitems.onotherwebsite} target="_blank" rel="noopener noreferrer">{serviceitems.onotherwebsite}</a>
               <button
                 name={serviceitems.title}
                 id={serviceitems.image}
@@ -47,7 +47,7 @@ class Services extends React.Component {
     return (
       <div>
         <h1 className="servicestitle">Some services I offer <br /> Hover or tap to expand</h1>
-        <div className="container">{serviceitems}</div>
+        <div className="container servicepage">{serviceitems}</div>
       </div>
     );
   }
