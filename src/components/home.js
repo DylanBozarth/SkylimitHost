@@ -14,7 +14,8 @@ class Home extends Component {
           maintain focus and balance. Let us help you unlock your potential and
           find your happiest, healthiest self.{" "}
         </h3>
-        <Imageshowoff className="homeslider" />
+        {/*
+        <Imageshowoff className="homeslider" /> */}
         <div className="homeinfo">
           <h3 className="homesubtitle">What sets Skylimit Fitness apart? </h3>
           <div className="hometext">

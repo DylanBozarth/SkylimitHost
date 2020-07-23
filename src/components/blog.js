@@ -52,9 +52,9 @@ class Blog extends Component {
 
     return (
       <div>
-        <h1 className="blogtitle lead">My blog</h1>
+        <h1 className="blogtitle lead">My blog is coming soon!</h1>
 
-        <div className="blogpage">{blogitems}</div>
+        <div className="blogpage"> {/*{blogitems} */}</div>
       </div>
     );
   }

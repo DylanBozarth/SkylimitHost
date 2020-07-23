@@ -274,7 +274,8 @@ max-width: 100%;
 }
 .skybiophoto {
   float: left;
-  margin-right: 5%;
+ margin-right: auto;
+ margin-left: auto;
 }
 .skybio {
   font-size: 20px;
@@ -352,6 +353,21 @@ font-size: 36px;
 color: skyblue;
 }
 @media only screen and (max-width: 600px) {
+  .meettitle {
+    font-size: 2rem;
+  }
+  .skybiophoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width: 90%;
+  }
+  .skyphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
   .serviceitem {
     max-width: 350px !important;
     max-height: 40% !important;
