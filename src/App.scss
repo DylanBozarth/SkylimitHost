@@ -83,11 +83,11 @@ $opening-angle:$pi*0.5;
   
   
   padding-top:20px;
-  padding-left:80px;
+  padding-left:65px;
   width:$width;
   height:$height;
   box-sizing:border-box;
-  font-size:16px;
+  font-size:1em;
   
 }
 
@@ -369,10 +369,10 @@ color: skyblue;
     width: 95%;
   }
   .serviceitem {
-    max-width: 350px !important;
+    width: 300px !important;
     max-height: 40% !important;
     margin-left: -5%;
-   position: relative;
+   
   }
   @mixin expand2{
     transform: scale(1.1, 1.1);
