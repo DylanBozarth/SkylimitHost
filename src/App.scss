@@ -12,7 +12,7 @@
 }
 .headerimg {
   width: 100vw;
-  height: 45vh;
+  height: 75vh;
   
 } 
 
@@ -25,7 +25,11 @@
   
 }
 @media only screen and (max-width: 600px) {
-  
+  .headerimg {
+    width: 100vw;
+    height: 25vh;
+    margin-top: 20%;
+  }
   .menu {
     left: -80px !important;
     top: -20px !important;
@@ -60,7 +64,7 @@ $opening-angle:$pi*0.5;
   height:80px;
   margin-left: 0px;
   position:absolute;
-  
+  border: 1px solid white;
   color:white !important;
   text-align:center;
   line-height:80px;
