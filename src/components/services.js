@@ -1,5 +1,6 @@
 import React from "react";
 
+import { motion } from "framer-motion";
 
 
 class Services extends React.Component {
@@ -21,7 +22,7 @@ class Services extends React.Component {
                 alt={serviceitems.title}
                 className="img-fluid serviceitemimg"
               />
-
+<div className="serviceprice">
               <p id={serviceitems.description} className=" ">
                 {serviceitems.description}
               </p>
@@ -37,7 +38,7 @@ class Services extends React.Component {
               >
                 Add to cart
               </button>
-              
+              </div>
             </div>
           );
         }

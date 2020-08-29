@@ -2,12 +2,30 @@ import React, { Component } from "react";
 import Imageshowoff from "./imageshowoff";
 import Testimonials from "./subcomponents/testimonials";
 import { NavLink } from "react-router-dom";
-
+import { motion } from "framer-motion";
+const changepage = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pagetransition = {
+  duration: 1.5,
+};
 class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="homepagemaster">
+      <motion.div
+        className="homepagemaster"
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
+      >
         <h3 className="hometagline">
           {" "}
           SkyLimit Fitness will keep you accountable for your goals and help you
@@ -108,7 +126,11 @@ class Home extends Component {
               className="fitnessguy"
               src={require("./images/fitnessguy.gif")}
             ></img>{" "}
-            <br /> <NavLink to="/Services" className="readytogetstarted"> Ready to get started? </NavLink>{" "}
+            <br />{" "}
+            <NavLink to="/Services" className="readytogetstarted">
+              {" "}
+              Ready to get started?{" "}
+            </NavLink>{" "}
             <br />
             <img
               alt="fitnessguy"
@@ -117,7 +139,7 @@ class Home extends Component {
             ></img>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }
