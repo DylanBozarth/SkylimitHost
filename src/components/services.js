@@ -28,7 +28,7 @@ class Services extends React.Component {
               </p>
               <p className="">${serviceitems.price}</p>
               <a href={serviceitems.onotherwebsite} target="_blank" rel="noopener noreferrer">{serviceitems.onotherwebsite}</a>
-              <button
+              </div><button
                 name={serviceitems.title}
                 id={serviceitems.image}
                 value={serviceitems.price}
@@ -38,7 +38,7 @@ class Services extends React.Component {
               >
                 Add to cart
               </button>
-              </div>
+              
             </div>
           );
         }
