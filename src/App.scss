@@ -319,6 +319,7 @@ $opening-angle: $pi * 0.5;
 }
 .serviceprice {
   text-align:center;
+
 }
 .servicetext {
   text-align: center;
@@ -362,8 +363,8 @@ $opening-angle: $pi * 0.5;
     /* IE 9 */
     -webkit-transform: scale(1.1, 1.1);
     /* Safari and Chrome */
-    transition: width 0.1s, height 0.1s, transform 0.1s;
-    -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s;
+    transition: width 1s, height 1s, transform 1s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
     opacity: 1;
     z-index: 999;
   }

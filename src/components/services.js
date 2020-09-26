@@ -1,6 +1,5 @@
 import React from "react";
 
-import { motion } from "framer-motion";
 
 
 class Services extends React.Component {
@@ -14,8 +13,9 @@ class Services extends React.Component {
     if (this.props.propdata) {
       var serviceitems = this.props.propdata.main.serviceitems.map(
         serviceitems => {
+          
           return (
-            <div className="col-sm-12  serviceitem" key={serviceitems.price}>
+            <div className="col-sm-4"  key={serviceitems.price}>
               <h5 className="">{serviceitems.title}</h5>
               <img
                 src={serviceitems.image}
@@ -46,9 +46,9 @@ class Services extends React.Component {
     } else return <h1>Loading...</h1>;
 
     return (
-      <div>
+      <div className="container-fluid ">
         <h1 className="servicestitle">Some services I offer <br /> Hover or tap to expand</h1>
-        <div className="container servicepage">{serviceitems}</div>
+        <div className=" row servicepage">{serviceitems}</div>
       </div>
     );
   }
