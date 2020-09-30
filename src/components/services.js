@@ -1,5 +1,17 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+const changepage = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pagetransition = {
+  duration: 1.5,
+};
 
 
 class Services extends React.Component {
@@ -15,6 +27,7 @@ class Services extends React.Component {
         serviceitems => {
           
           return (
+
             <div className="col-sm-4"  key={serviceitems.price}>
               <h5 className="">{serviceitems.title}</h5>
               <img
@@ -46,10 +59,18 @@ class Services extends React.Component {
     } else return <h1>Loading...</h1>;
 
     return (
-      <div className="container-fluid ">
+      <motion.div
+        className="container-fluid"
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={changepage}
+        transition={pagetransition}
+      >
+    
         <h1 className="servicestitle">Some services I offer <br /> Hover or tap to expand</h1>
         <div className=" row servicepage">{serviceitems}</div>
-      </div>
+      </motion.div>
     );
   }
 }
