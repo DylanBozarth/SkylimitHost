@@ -95,7 +95,7 @@ class Cart extends Component {
     return (
       <div className="">
         <h1 className="servicestitle">Your cart</h1>
-        <div className="container servicepage">{cartitems}</div>
+        <div className="container-fluid ">{cartitems}</div>
         
         <div className="cartfooter">
           <h4 className="yourtotal">Your total: $ {this.props.total}</h4>
