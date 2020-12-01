@@ -38,12 +38,12 @@ class Navbar extends Component {
               Services
             </i>{" "}
           </NavLink>
-          <NavLink to="/Blog" className="menu-item">
+        {/*  <NavLink to="/Blog" className="menu-item">
             {" "}
             <i className=" fa fa-newspaper-o ">
               Blog
-            </i>
-          </NavLink>
+            </i> 
+    </NavLink> */}
           <NavLink to="/Cart" className="menu-item">
             {this.props.cart.length}
             <FaShoppingCart />
