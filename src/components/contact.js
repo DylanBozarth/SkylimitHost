@@ -66,57 +66,62 @@ export default class Contact extends React.Component {
         <br />
         <label>What are you fitness goals?</label>
         <textarea type="text" name="My fitness goals" />
-
-        <div className="checkboxes">
-          <h3>What are you interested in? Select all that apply.</h3>
-          <div className="leftboxes">
-          <div className="radio ">
-            <label>
-              <input type="checkbox" className="checkbox" name="Coaching" />1 :
-              1 Coaching
-            </label>
+        <h3 className="text-center">
+          What are you interested in? Select all that apply.
+        </h3>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-4">
+              <label>
+                <input type="checkbox" className="checkbox" name="Coaching" />1
+                : 1 Coaching
+              </label>
           </div>
-          <div className="radio">
-            <label>
-              <input type="checkbox" className="checkbox" name="Triatholons" />
-              Triathlon Training Plans
-            </label>
+          <div className="col-sm-4">
+              <label>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  name="Triatholons"
+                />
+                Triathlon Training Plans
+              </label>
+           </div>
+           <div className="col-sm-4">
+              <label>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  name="running/trainingplans"
+                />
+                Running/Ultrarunning Training Plans
+              </label>
+            </div>
+            <div className="col-sm-4">
+              <label>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  name="Personal Training plans"
+                />
+                Personal Training plans
+              </label>
+            
           </div>
-          <div className="radio">
-            <label>
-              <input
-                type="checkbox"
-                className="checkbox"
-                name="running/trainingplans"
-              />
-              Running/Ultrarunning Training Plans
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              <input
-                type="checkbox"
-                className="checkbox"
-                name="Personal Training plans"
-              />
-              Personal Training plans
-            </label>
-          </div>
-          </div>
-          <div className="rightboxes">
-          <div className="radio">
+              
+          <div className="col-sm-4">
             <label>
               <input type="checkbox" className="checkbox" name="Nutrition" />
               Nutrition Coaching
             </label>
           </div>
-          <div className="radio">
+          <div className="col-sm-4">
             <label>
               <input type="checkbox" className="checkbox" name="Swimming" />
               Swimming Analysis
             </label>
-          </div>
-          <div className="radio">
+         </div>
+         <div className="col-sm-4">
             <label>
               <input
                 type="checkbox"
@@ -125,9 +130,11 @@ export default class Contact extends React.Component {
               />
               Running Analysis
             </label>
-          </div>
+         </div>
+        
         </div>
-</div>
+        </div>
+
         {status === "SUCCESS" ? (
           <p>{itworked()}</p>
         ) : (

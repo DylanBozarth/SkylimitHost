@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import Testimonials from "./subcomponents/testimonials";
 const changepage = {
   in: {
     opacity: 1,
@@ -68,8 +69,12 @@ class Services extends React.Component {
         transition={pagetransition}
       >
     
-        <h1 className="servicestitle">Some services I offer <br /> Hover or tap to expand</h1>
+        <h1 className="servicestitle">Some services I offer </h1>
         <div className=" row servicepage">{serviceitems}</div>
+        <h1 className="testimonialtitle">Testimonials</h1>
+        <div className="Testimonials">
+            <Testimonials />
+          </div>
       </motion.div>
     );
   }
