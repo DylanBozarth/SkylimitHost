@@ -4,7 +4,18 @@
 import cogoToast from "cogo-toast";
 import React from "react";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-
+import { motion } from "framer-motion";
+const changepage = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pagetransition = {
+  duration: 1.5,
+};
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -28,6 +39,14 @@ export default class Contact extends React.Component {
     }
 
     return (
+      <motion.div
+      className="homepagemaster"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={changepage}
+      transition={pagetransition}
+    >
       <form
         onSubmit={this.submitForm}
         action="https://formspree.io/maypqndd"
@@ -69,7 +88,7 @@ export default class Contact extends React.Component {
         <h3 className="text-center">
           What are you interested in? Select all that apply.
         </h3>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-sm-4">
               <label>
@@ -142,6 +161,7 @@ export default class Contact extends React.Component {
         )}
         {status === "ERROR" && <p>{didntwork()}</p>}
       </form>
+      </motion.div>
     );
   }
 
