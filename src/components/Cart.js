@@ -98,8 +98,9 @@ class Cart extends Component {
         <div className="container-fluid "><div className="col-lg-12">{cartitems}</div></div>
         
         <div className="cartfooter">
-          <h4 className="yourtotal">Your total: $ {this.props.total}</h4>
-          <PaypalButton className="checkoutbutton" total={this.props.total} />
+          
+          <div className="text-center"><h4 className="yourtotal">Your total: $ {this.props.total}</h4>
+          <PaypalButton className="checkoutbutton" total={this.props.total} /></div>
         </div>
       </div>
     );
