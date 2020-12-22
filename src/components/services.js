@@ -15,6 +15,43 @@ const pagetransition = {
 
 
 class Services extends React.Component {
+  state = [
+      {
+        
+        "price": 10,
+        "image": "./serviceimages/nutrition.png"
+      },
+      {
+        
+        "price": 35,
+        "image": "./serviceimages/personaltraining.png"
+        
+      },
+      {
+       
+        "price": 5,
+        "image": "./serviceimages/swimanalysis.png"
+      },
+      {
+        
+        "price": 175,
+        "image": "./serviceimages/coachingbronze.png",
+        "amount": 1
+      },
+      {
+        
+        "price": 100,
+        "image": "./serviceimages/coachingsilver.png"
+      },
+      {
+        
+        "price": 195,
+        "image": "./serviceimages/coachinggold.png",
+        
+
+
+      }
+    ]
   handleAddToCart = (e, serviceitems) => {
     this.props.addToCart(serviceitems);
     e.target.classList.add("btn-success");
@@ -22,8 +59,9 @@ class Services extends React.Component {
   };
 
   render() {
-    if (this.props.propdata) {
-      var serviceitems = this.props.propdata.main.serviceitems.map(
+    if (this.state) {
+      
+      var serviceitems = this.state.map(
         serviceitems => {
           
           return (
