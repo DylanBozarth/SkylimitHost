@@ -126,10 +126,9 @@
   /* nav bar end */
   /* Home page styling */
   .homepagemaster {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -5%;
   }
   @media only screen and (max-width: 600px) {
     .homepagemaster {
@@ -185,8 +184,6 @@
   .coachskywill {
     color: skyblue;
     font-weight: bolder;
-    margin-bottom: 15px;
-    margin-top: -10%;
     text-align: center;
     font-size: 50px;
   }

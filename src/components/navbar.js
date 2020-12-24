@@ -28,7 +28,7 @@ class Navbar extends Component {
             {" "}
             <i className="fa fa-home">
               
-              Home
+              About
             </i>
           </NavLink>
           <NavLink to="/Services" className="menu-item">

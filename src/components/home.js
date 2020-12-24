@@ -18,7 +18,8 @@ class Home extends Component {
   render() {
     return (
       <motion.div
-        className="homepagemaster"
+        className="homepagemaster container-fluid
+        "
         initial="out"
         animate="in"
         exit="out"
@@ -31,25 +32,6 @@ class Home extends Component {
           maintain focus and balance. Let us help you unlock your potential and
           find your happiest, healthiest self.{" "}
         </h3>
-        {/*
-        <Imageshowoff className="homeslider" /> */}
-        <div className="homeinfo">
-          <h3 className="homesubtitle">What sets Skylimit Fitness apart? </h3>
-          <div className="hometext">
-            SkyLimit Fitness doesn’t just create training plans! <br /> We
-            emphasize whole-body health by looking at the three building blocks
-            of your wellness:
-            <ul>
-              {" "}
-              <li>fitness</li> <li>nutrition</li> <li>mental health</li>{" "}
-            </ul>{" "}
-            With training plans and nutrition coaching all in one place, we help
-            you forge a lifestyle geared toward a healthy balance between your
-            fitness, health and wellness goals. With communication sessions
-            dedicated to your short-term goals and progress.
-          </div>
-        </div>
-        <div className="homebio"></div>
         <div className="meet">
           <h2 className="meettitle">Meet Coach Sky</h2>
           <img
@@ -73,6 +55,26 @@ class Home extends Component {
           </p>
         </div>
 
+        {/*
+        <Imageshowoff className="homeslider" /> */}
+        <div className="homeinfo">
+          <h3 className="homesubtitle">What sets Skylimit Fitness apart? </h3>
+          <div className="hometext">
+            SkyLimit Fitness doesn’t just create training plans! <br /> We
+            emphasize whole-body health by looking at the three building blocks
+            of your wellness:
+            <ul>
+              {" "}
+              <li>fitness</li> <li>nutrition</li> <li>mental health</li>{" "}
+            </ul>{" "}
+            With training plans and nutrition coaching all in one place, we help
+            you forge a lifestyle geared toward a healthy balance between your
+            fitness, health and wellness goals. With communication sessions
+            dedicated to your short-term goals and progress.
+          </div>
+        </div>
+        <div className="homebio"></div>
+        
         <div className="homebio">
           <h1 className="hometitle">Sky's teaching philosphy</h1>
           <p className="hometext">
