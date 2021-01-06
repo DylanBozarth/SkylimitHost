@@ -12,7 +12,9 @@
     width: 100vw;
     height: 75vh;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   /* nav bar start */
   .menu {
     top: 0 !important;
