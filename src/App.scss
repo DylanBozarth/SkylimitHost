@@ -38,7 +38,7 @@
     }
     .menu {
       left: -4rem !important;
-      top: -1rem !important;
+      
       font-size: 1rem !important;
       z-index: 90;
     }
@@ -51,7 +51,7 @@
   
   //config
   $menu-items: 4;
-  $open-distance: 10%;
+  $open-distance: 15%;
   $opening-angle: $pi * 0.5;
   
   %goo {
@@ -78,6 +78,7 @@
   }
   .menu-item {
     @extend %ball;
+    margin-left: -8px
   }
   
   .menu {
