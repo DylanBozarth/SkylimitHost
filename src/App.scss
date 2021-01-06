@@ -1,6 +1,9 @@
 .App {
     margin: 0 auto;
   }
+  body {
+    overflow-y: scroll;
+  }
   body::-webkit-scrollbar {
     display: none;
   }
@@ -9,9 +12,14 @@
     overflow: hidden;
   }
   .headerimg {
+    box-sizing: border-box;
+  
+    position: relative;
+    transform-style: inherit;
     width: 100vw;
-    height: 75vh;
-  }
+    text-align: center;
+    text-transform: uppercase;
+}
   html {
     scroll-behavior: smooth;
   }
