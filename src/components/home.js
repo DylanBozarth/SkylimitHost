@@ -76,7 +76,7 @@ class Home extends Component {
         <div className="homebio"></div>
         
         <div className="homebio">
-          <h1 className="hometitle">Sky's teaching philosphy</h1>
+          <h1 className="hometitle">Sky's teaching philosophy</h1>
           <p className="hometext">
             {" "}
             SkyLimit Fitness is dedicated to helping athletes crush their goals
