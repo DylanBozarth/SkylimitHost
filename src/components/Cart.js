@@ -88,7 +88,7 @@ class Cart extends Component {
     } else
       return (
         <h1 className="nocart">
-          Add items to your cart and they will appear here.
+          Your cart is currently empty.
         </h1>
       );
 

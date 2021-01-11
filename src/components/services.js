@@ -73,7 +73,7 @@ class Services extends React.Component {
               <p id={serviceitems.description} className=" ">
                 {serviceitems.description}
               </p>
-              <p className="">${serviceitems.price}</p>
+              <p className="price">${serviceitems.price}</p>
               <a
                 href={serviceitems.onotherwebsite}
                 target="_blank"
