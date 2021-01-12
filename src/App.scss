@@ -11,6 +11,13 @@
     max-width: 100% !important;
     overflow: hidden;
   }
+  .headercontainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+  
+    overflow-x: hidden;
+ 
+  }
   .headerimg {
     box-sizing: border-box;
   
